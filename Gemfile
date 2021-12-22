@@ -1,11 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'webrick'
 gem 'rack'
-gem 'dotenv'
-gem 'activerecord'
-gem 'pg'
-gem 'require_all'
-
-group :development do
-  gem 'pry'
-end
+gem 'erb'
+gem 'json'
+gem 'pry'

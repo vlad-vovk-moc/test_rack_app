@@ -1,0 +1,12 @@
+{
+  "/": {
+    "controller":    "page",
+    "action":        "index",
+    "template_name": "index",
+    "is_custom": false
+  },
+  "/test_endpoint": {
+    "template_name": "test_temlate",
+    "is_custom": true
+  }
+} 

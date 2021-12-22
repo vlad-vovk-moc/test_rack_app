@@ -3,6 +3,6 @@ Bundler.require(:default)
 
 require './application.rb'
 
-use Rack::Reloader
 
+use Rack::Reloader
 run Application.new

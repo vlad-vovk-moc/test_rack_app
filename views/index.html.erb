@@ -1,5 +1,18 @@
 <h1>Hello world</h1>
 
 <% @data.each do |path, data| %>
-  
+  <p><a href="<%=path%>"> <%=data['template_name']%> </a></p>
 <% end %>
+
+ <form action="/create" method="POST">
+  <label for="filename">Name of the file </label>
+  <p><input id="filename" type="text" name="filename"></p>
+
+  <label for="endpoint_path">Endpoint path</label>
+  <p><input id="endpoint_path" type="text" name="endpoint_path"></p>
+
+  <label for="snippet">Past your snipper</label>
+  <p><textarea name="snippet"></textarea></p>
+
+  <input type="submit" value="Submit">
+ </form>
